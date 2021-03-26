@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+:root {
+  --site-base-font-size: 16px;
+  --site-base-line-height: 19px;
+  --site-base-font-weight: 300;
+  --site-head-font: 'Open Sans', sans-serif;
+  --site-body-font: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  --site-blue-dark: #334255;
+  --site-orange: #f36d25;
+
+  --site-font-black: #232323;
+  --site-font-white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 2rem 0;
+  margin: 0;
+}
+p {
+  font-family: var(--site-body-font);
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: var(--site-head-font);
+  font-weight: 400;
+}
+
+.orange {
+  color: var(--site-orange);
+}
+
+a, a:hover, a:visited {
+  color: var(--site-orange);
+}
+
+.hero {
+  display: flex;
+  height: 700px;
+  background-image: url("../img/hero-image.JPG");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__logo_holder {
+  text-align: center;
+  width: 460px;
+  height: auto;
+  margin-right: 10rem;
+}
+
+.hero__logo {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hero__btn {
+  
+  padding: 0.25rem 1.8rem;
+  border: 2px solid #f36d25;
+  font-size: 1.5rem;
+  color: var(--site-font-white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero__btn a {
+  height: 100%;
+  color: var(--site-font-white);
+}
+
+.hero__logo_holder p {
+  color: var(--site-font-white);
+  font-size: 1.5rem;
+}
+
+.about {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 73, 122, 0.6) 26.48%,
+      rgba(0, 51, 102, 0.6) 73.52%
+    ),
+    url("../img/Ric1.JPG");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about p {
+  color: var(--site-font-white);
+}
+
+.about h3 {
+  color: #ffffff;
+}
+
+.join {
+  color: var(--site-font-white);
+}
+
+.join__container {
+  padding: 3rem;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 73, 122, 0.8) 26.48%,
+      rgba(0, 51, 102, 0.8) 73.52%
+    ),
+    url("../img/0715twilight696.png");
+
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.join__btn_holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.join__btn_holder {
+  width: 100%;
+  height: 100%;
+}
+
+.center-carousel {
+  display: flex;
+  align-items: center;
+  
+}
+
+.center-carousel img {
+  max-width: 100%;
+ 
+}
+
+.lrc_footer {
+  padding: 2rem 0;
+  background-color: var(--site-font-black);
+  color: #cecece;
+}
+
+.lrc_footer a, .lrc_footer a:visited {
+  color: #555555;
+}
+
+.lrc_footer a:hover {
+  color: var(--site-orange);
+}
+
+
+.lrc_footer h4 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  
+}
+.lrc_footer ul {
+    padding-left: 0;
+}
+
+.fab, .fas {
+  font-size: 1.5rem;
+}
+
+.lrc_footer li {
+  list-style: none;
+  
+}
+
+.lrc_footer .footer_socials i {
+  margin: .25rem;
+}
+
+.lrc__footer_copyright {
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 967px) {
+  .hero__logo_holder {
+    margin-right: 0;
+    
+  }
+  .hero__inner {
+    justify-content: center;
+  }
+
+  .intro img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .lrc_footer .col-lg-4 {
+    text-align: center;
+    margin-bottom: 1rem;
+   
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    height: 100vh;
+    background-image: url("../img/hero-image-mobile.jpg");
+    
+  }
+
+  .hero__logo {
+    width: 90%;
+    height: auto;
+    
+  }
+}

@@ -169,7 +169,9 @@ a, a:hover, a:visited {
   color: var(--site-orange);
 }
 
-
+.footer_socials a {
+  text-decoration: none!important;
+}
 .lrc_footer h4 {
   font-size: 1.05rem;
   text-transform: uppercase;

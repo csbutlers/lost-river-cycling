@@ -5,7 +5,7 @@
   --site-base-font-size: 16px;
   --site-base-line-height: 19px;
   --site-base-font-weight: 300;
-  --site-head-font: 'Open Sans', sans-serif;
+  --site-head-font: "Open Sans", sans-serif;
   --site-body-font: "Source Sans Pro", Arial, Helvetica, sans-serif;
   --site-blue-dark: #334255;
   --site-orange: #f36d25;
@@ -33,6 +33,7 @@ p {
 
 h3 {
   font-size: 2.5rem;
+  margin-bottom: 2rem;
   font-family: var(--site-head-font);
   font-weight: 400;
 }
@@ -41,7 +42,9 @@ h3 {
   color: var(--site-orange);
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
   color: var(--site-orange);
 }
 
@@ -63,7 +66,7 @@ a, a:hover, a:visited {
 
 .hero__logo_holder {
   text-align: center;
-  width: 460px;
+  width: 303px;
   height: auto;
   margin-right: 10rem;
 }
@@ -74,7 +77,6 @@ a, a:hover, a:visited {
 }
 
 .hero__btn {
-  
   padding: 0.25rem 1.8rem;
   border: 2px solid #f36d25;
   font-size: 1.5rem;
@@ -96,10 +98,10 @@ a, a:hover, a:visited {
 .about {
   background-image: linear-gradient(
       to left,
-      rgba(0, 73, 122, 0.6) 26.48%,
-      rgba(0, 51, 102, 0.6) 73.52%
+      rgba(0, 73, 122, 0.3) 16.5%,
+      rgba(0, 51, 102, 0.9) 73.52%
     ),
-    url("../img/Ric1.JPG");
+    url("../img/new-LRC-tim.jpg");
 
   background-position: center;
   background-size: cover;
@@ -147,12 +149,10 @@ a, a:hover, a:visited {
 .center-carousel {
   display: flex;
   align-items: center;
-  
 }
 
 .center-carousel img {
   max-width: 100%;
- 
 }
 
 .lrc_footer {
@@ -161,7 +161,8 @@ a, a:hover, a:visited {
   color: #cecece;
 }
 
-.lrc_footer a, .lrc_footer a:visited {
+.lrc_footer a,
+.lrc_footer a:visited {
   color: #555555;
 }
 
@@ -170,39 +171,36 @@ a, a:hover, a:visited {
 }
 
 .footer_socials a {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 .lrc_footer h4 {
   font-size: 1.05rem;
   text-transform: uppercase;
-  
 }
 .lrc_footer ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
-.fab, .fas {
+.fab,
+.fas {
   font-size: 1.5rem;
 }
 
 .lrc_footer li {
   list-style: none;
-  
 }
 
 .lrc_footer .footer_socials i {
-  margin: .25rem;
+  margin: 0.25rem;
 }
 
 .lrc__footer_copyright {
   text-align: center;
 }
 
-
 @media only screen and (max-width: 967px) {
   .hero__logo_holder {
     margin-right: 0;
-    
   }
   .hero__inner {
     justify-content: center;
@@ -216,23 +214,19 @@ a, a:hover, a:visited {
   .lrc_footer .col-lg-4 {
     text-align: center;
     margin-bottom: 1rem;
-   
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   .hero {
     display: flex;
     height: 100vh;
     background-image: url("../img/hero-image-mobile.jpg");
-    
   }
 
   .hero__logo {
     width: 90%;
     height: auto;
-    
   }
 
   p {
@@ -241,6 +235,5 @@ a, a:hover, a:visited {
   }
   h3 {
     font-size: 1.8rem;
-
   }
 }

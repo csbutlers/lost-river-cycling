@@ -224,6 +224,15 @@ a:visited {
     background-image: url("../img/hero-image-mobile.jpg");
   }
 
+  .about {
+    box-shadow: inset 0 0 0 50vw rgba(2, 80, 164, 0.7);
+    background: url("../img/new-LRC-tim.jpg");
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .hero__logo {
     width: 90%;
     height: auto;
